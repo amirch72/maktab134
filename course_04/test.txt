@@ -1,0 +1,3 @@
+
+Hello worldHi guys
+b'Hello world'
