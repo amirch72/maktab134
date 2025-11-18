@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login user | Maktab 134</title>
+</head>
+
+<body>
+    {% if message %}
+    <h1>{{message}}</h1>
+    {% endif %}
+    {% if form %}
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </form>
+    {% endif %}
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show {{user.last_name}} info | Maktab 134</title>
+</head>
+
+<body>
+    <h1>{% if user.gender %}Mr.{% else %}Mrs.{% endif %} {{user.first_name}} {{user.last_name}}</h1>
+    <ul>
+        <li>{{user.phone_number}}</li>
+        <li>{{user.email}}</li>
+        <li>{{user.birthday}}</li>
+        <li>{{user.user_type}}</li>
+    </ul>
+    <a href="/user/logout/">Logout</a>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show all users | Maktab 134</title>
+</head>
+
+<body>
+    <ul>
+        {% for i in data %}
+        <li>{{i.first_name}} {{i.last_name}} | {{i.email}}</li>
+        {% endfor %}
+    </ul>
+    <a href="/user/logout/">Logout</a>
+
+</body>
+
+</html>
